@@ -1,99 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunnydale School</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian Raphael | Portfolio</title>
+
   <style>
-    
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 20px;
-      line-height: 1.6;
-      background-color: #fdfdfd;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    h1 {
-      font-size: 24px;
+    body {
+      background-color: #fff;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    
+    header {
+      width: 100%;
+      border-bottom: 1px solid #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10%;
       font-weight: bold;
-      color: #1E90FF;
+    }
+
+    header .logo {
+      font-size: 18px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #000;
+      font-weight: normal;
+    }
+
+    
+    .hero {
+      text-align: center;
+      padding: 30px 0;
+      width: 80%;
+      max-width: 800px;
+      border-bottom: 1px solid #000;
+    }
+
+    .hero .placeholder {
+      border: 1px solid #000;
+      height: 150px;
+      margin-bottom: 30px;
+    }
+
+    .hero h1 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .buttons button {
+      padding: 8px 20px;
+      border: 1px solid #000;
+      background: none;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+
+    
+    .projects {
+      text-align: center;
+      padding: 30px 0;
+      width: 80%;
+      max-width: 800px;
+      border-bottom: 1px solid #000;
+    }
+
+    .projects h2 {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .project-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .project {
+      width: 150px;
       text-align: center;
     }
 
-    
-    h2 {
-      margin-top: 20px;
+    .project .box {
+      border: 1px solid #000;
+      height: 100px;
+      margin-bottom: 8px;
     }
 
-    h2.mission {
-      color: #32CD32;
+   
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+      color: #000;
     }
 
-    #upcoming-events {
-      color: #FFA07A;
-      background-color: #FFFFE0;
-      padding: 10px;
-    }
-
-    h2.contact {
-      color: #20B2AA;
-    }
-
-    
-    .outdoor {
-      background-color: #AFEEEE;
-      padding: 5px;
-      border: 1px solid #B0E0E6;
-      margin-bottom: 5px;
-    }
-
-    
-    .section {
-      background-color: #f8f3f3;
-      padding: 10px;
-      border-radius: 5px;
+    .social {
       margin-top: 10px;
     }
 
-    ul {
-      list-style-type: square;
+    .social i {
+      margin: 0 8px;
+      font-size: 18px;
+      cursor: pointer;
     }
+
+    .social a {
+      text-decoration: none;
+      color: #000;
+      font-size: 18px;
+      margin: 0 8px;
+    }
+
   </style>
 </head>
 <body>
-
-  <h1>Sunnydale School</h1>
-
   
-  <h2 class="mission">Mission Statement</h2>
-  <p>At UNIDA CHRISTIAN COLLEGE , we strive to nurture young minds with knowledge, creativity, and discipline. Our mission is to provide a safe and engaging environment for students to grow academically and personally.</p>
+  <header>
+    <div class="logo">Christian Raphael</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Resume</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
  
-  <h2 id="upcoming-events">Upcoming Events</h2>
-  <ul>
-    <li data-event-type="indoor" title="Event Type: Indoor">
-      Science Fair - <span style="font-weight: bold; color: red;">June 10</span>
-    </li>
-    <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">
-      Art Exhibition - <span style="font-weight: bold; color: red;">June 15</span>
-    </li>
-    <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">
-      Sports Day - <span style="font-weight: bold; color: red;">June 20</span>
-    </li>
-  </ul>
+  <section class="hero">
+    <div class="placeholder"></div>
+    <h1>Hi, I'm Christian Raphael G. Milanbilin</h1>
+    <p>A passionate web developer and aspiring software engineer.</p>
+    <div class="buttons">
+      <button>View My Work</button>
+      <button>Contact Me</button>
+    </div>
+  </section>
 
   
-  <h2 class="contact">Contact Us</h2>
-  <div class="section">
-    <p>Email: 
-      <a href="milanbilinraph@gmail.com" title="Click to copy email">milanbilinraph@gmail.com</a>
-    </p>
-    <p>Phone: 
-      <a href="tel:+639959145773" title="Click to copy phone number">+639959145773</a>
-    </p>
-    <p>Address: 123 Sunshine Avenue, Bright City</p>
-  </div>
-  
+  <section class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project">
+        <div class="box"></div>
+        <p>Project 1</p>
+      </div>
+      <div class="project">
+        <div class="box"></div>
+        <p>Project 2</p>
+      </div>
+      <div class="project">
+        <div class="box"></div>
+        <p>Project 3</p>
+      </div>
+    </div>
+  </section>
 
+  
+  <footer>
+    <p>© 2025 Christian Raphael G. Milanbilin</p>
+    <div class="social">
+      <a href="#">f</a>
+      <a href="#">t</a>
+      <a href="#">in</a>
+    </div>
+  </footer>
 </body>
 </html>
