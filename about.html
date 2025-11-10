@@ -1,136 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me - Christian Raphael G. Milanbilin</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian Raphael | Portfolio</title>
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background-color: #f8f8f8;
-      color: #000;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    /* Navbar */
-    nav {
+    body {
+      background-color: #fff;
+      color: #000;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+    }
+
+   
+    header {
+      width: 100%;
       border-bottom: 1px solid #000;
-      padding: 15px 0;
-      background-color: #f9f9f9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10%;
+      font-weight: bold;
+    }
+
+    header .logo {
+      font-size: 18px;
     }
 
     nav a {
-      margin: 0 20px;
+      margin-left: 25px;
       text-decoration: none;
       color: #000;
-      font-weight: bold;
-      transition: 0.2s;
+      font-weight: normal;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* About Section */
-    .about {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 50px 20px;
-      border-bottom: 1px solid #000;
-      flex-wrap: wrap;
-    }
-
-    .profile-pic {
-      width: 180px;
-      height: 180px;
-      border: 2px solid #000;
-      border-radius: 50%;
-      margin-right: 40px;
-      background-color: #f1f1f1;
-      background-position: center;
-      background-size: cover;
-    }
-
-    .about-text h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .about-text h3 {
-      margin: 10px 0 5px;
-    }
-
-    .about-text p {
-      max-width: 480px;
-      line-height: 1.6;
-    }
-
-    /* Skills Section */
-    .skills {
-      padding: 40px 20px;
-      border-bottom: 1px solid #000;
+   
+    .hero {
       text-align: center;
+      padding: 30px 0;
+      width: 80%;
+      max-width: 800px;
+      border-bottom: 1px solid #000;
     }
 
-    .skills h2 {
+    .hero .placeholder {
+      border: 1px solid #000;
+      height: 150px;
       margin-bottom: 30px;
     }
 
-    .skill {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 15px;
+    .hero h1 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    .skill span {
-      width: 80px;
-      text-align: left;
-      font-weight: 600;
-    }
-
-    .progress-bar {
-      width: 60%;
-      height: 15px;
-      border: 1px solid #000;
-      border-radius: 10px;
-      margin-left: 20px;
-      overflow: hidden;
-    }
-
-    .progress {
-      height: 100%;
-      background-color: #000;
-    }
-
-    .html { width: 80%; }
-    .css { width: 70%; }
-    .python { width: 50%; }
-    .design { width: 60%; }
-
-    /* Goals Section */
-    .goals {
-      text-align: center;
-      padding: 50px 20px;
-      border-bottom: 1px solid #000;
-    }
-
-    .goals h2 {
+    .hero p {
+      color: #333;
       margin-bottom: 20px;
     }
 
-    .goal-box {
-      display: inline-block;
-      border: 1px solid #000;
-      border-radius: 10px;
-      padding: 20px 40px;
-      max-width: 500px;
-      background-color: #f8f8f8;
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
     }
+
+    .buttons button {
+      padding: 8px 20px;
+      border: 1px solid #000;
+      background: none;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+
+   
+    .projects {
+      text-align: center;
+      padding: 30px 0;
+      width: 80%;
+      max-width: 800px;
+      border-bottom: 1px solid #000;
+    }
+
+    .projects h2 {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .project-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .project {
+      width: 150px;
+      text-align: center;
+    }
+
+    .project img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border: 1px solid #000;
+      margin-bottom: 8px;
+      border-radius: 4px;
+    }
+
+   
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+      color: #000;
+    }
+
+    .social {
+      margin-top: 10px;
+    }
+
+    .social a {
+      text-decoration: none;
+      color: #000;
+      font-size: 18px;
+      margin: 0 8px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <header>
+    <div class="logo">Christian Raphael</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contac.html">Contact</a>
+    </nav>
+  </header>
+
 
     /* Contact Section */
     .contact {
