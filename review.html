@@ -175,7 +175,7 @@
             margin-top: 10px;
         }
 
-        /* Submit Review Form */
+       
         .submit-review form {
             background-color: #fff;
             padding: 20px;
@@ -236,7 +236,43 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+<main>
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <div class="review">
+                <div class="stars">★★★★★</div>
+                <p>Christian is hardworking and dedicated!</p>
+                <div class="author">Teacher</div>
+            </div>
+            <div class="review">
+                <div class="stars">★★★★★</div>
+                <p>Great collaborator, always delivers work.</p>
+                <div class="author">Classmate</div>
+            </div>
+        </section>
 
+        <section class="submit-review">
+            <h2>Submit Your Review</h2>
+            <form action="#" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="rating">Rating</label>
+                <select id="rating" name="rating" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
  
  
 
