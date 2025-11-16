@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me - Christian Raphael G. Milanbilin</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,23 +16,41 @@
    
     nav {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      padding: 20px 40px;
+      background-color: #ffffff;
       border-bottom: 1px solid #000;
-      padding: 15px 0;
-      background-color: #f9f9f9;
     }
 
-    nav a {
-      margin: 0 20px;
+    .nav-left {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-right a {
+      margin-left: 30px;
       text-decoration: none;
       color: #000;
       font-weight: bold;
-      transition: 0.2s;
+      position: relative;
+      padding-bottom: 4px;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    .nav-right a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #000;
+      transition: 0.3s ease;
+    }
+
+    .nav-right a:hover::after {
+      width: 100%;
     }
 
   
@@ -133,51 +152,7 @@
     }
 
   
-    .contact {
-      text-align: center;
-      padding: 50px 20px;
-      border-bottom: 1px solid #000;
-    }
-
-    .contact h2 {
-      margin-bottom: 20px;
-    }
-
-    .contact-info {
-      display: inline-block;
-      border: 1px solid #000;
-      border-radius: 10px;
-      padding: 20px 40px;
-      background-color: #f8f8f8;
-      line-height: 1.8;
-    }
-
-    .contact-info a {
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-      .about {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .profile-pic {
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
-
-      .progress-bar {
-        width: 80%;
-      }
-    }
-     footer {
+    footer {
       text-align: center;
       padding: 20px 0;
       font-size: 14px;
@@ -194,22 +169,50 @@
       font-size: 18px;
       margin: 0 8px;
     }
+
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .profile-pic {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .progress-bar {
+        width: 80%;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-right a {
+        margin-left: 15px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
- 
+  
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="review.html">Review</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
+    <div class="nav-left">Christian Raphael</div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="review.html">Review</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
 
-
   <section class="about">
-    <div class="profile-pic" style="background-image: url('your-photo.jpg');"></div>
+    <div class="profile-pic" style="background-image: url('profile.jpg');"></div>
     <div class="about-text">
       <h2>About Me</h2>
       <h3>Christian Raphael G. Milanbilin</h3>
@@ -220,7 +223,6 @@
     </div>
   </section>
 
-  
   <section class="skills">
     <h2>Skills</h2>
     <div class="skill">
@@ -241,14 +243,16 @@
     </div>
   </section>
 
- 
+  
   <section class="goals">
     <h2>Goals</h2>
     <div class="goal-box">
       To become a full-fledged software engineer working on innovative products.
     </div>
   </section>
-   <footer>
+
+ 
+  <footer>
     <p>© 2025 Christian Raphael G. Milanbilin</p>
     <div class="social">
       <a href="https://www.facebook.com/christian.109743">facebook</a>
@@ -257,8 +261,5 @@
     </div>
   </footer>
 
-  
-
 </body>
 </html>
-
